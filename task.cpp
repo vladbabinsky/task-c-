@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-// Завдання 1: Структура для арифметичних операцій
+// Task 1: Structure for arithmetic operations
 struct Arithmetic {
     double a;
     double b;
 };
 
-// Завдання 2: Структура "Автомобіль"
+// Task 2: Structure "Car"
 struct Car {
     double length;
     double clearance;
@@ -19,51 +19,51 @@ struct Car {
 };
 
 int main() {
-    // Завдання 1
+    // Task 1
     Arithmetic arith;
-    cout << "Введіть два числа: ";
+    cout << "Enter two numbers: ";
     cin >> arith.a >> arith.b;
 
-    cout << "Сума: " << arith.a + arith.b << endl;
-    cout << "Різниця: " << arith.a - arith.b << endl;
-    cout << "Множення: " << arith.a * arith.b << endl;
+    cout << "Sum: " << arith.a + arith.b << endl;
+    cout << "Difference: " << arith.a - arith.b << endl;
+    cout << "Multiplication: " << arith.a * arith.b << endl;
     if (arith.b != 0) {
-        cout << "Ділення: " << arith.a / arith.b << endl;
+        cout << "Division: " << arith.a / arith.b << endl;
     }
     else {
-        cout << "Помилка: ділення на нуль!" << endl;
+        cout << "Error: Division by zero!" << endl;
     }
 
-    // Завдання 2
+    // Task 2
     Car car;
 
-    cout << "Введіть довжину автомобіля: ";
+    cout << "Enter the length of the car: ";
     cin >> car.length;
 
-    cout << "Введіть кліренс автомобіля: ";
+    cout << "Enter the clearance of the car: ";
     cin >> car.clearance;
 
-    cout << "Введіть об'єм двигуна: ";
+    cout << "Enter the engine volume: ";
     cin >> car.engineVolume;
 
-    cout << "Введіть потужність двигуна: ";
+    cout << "Enter the engine power: ";
     cin >> car.enginePower;
 
-    cout << "Введіть діаметр коліс: ";
+    cout << "Enter the wheel diameter: ";
     cin >> car.wheelDiameter;
 
-    cout << "Введіть колір автомобіля: ";
+    cout << "Enter the color of the car: ";
     cin >> car.color;
 
-    cout << "Введіть тип коробки передач: ";
+    cout << "Enter the type of transmission: ";
     cin >> car.transmission;
 
-    cout << "\nАвтомобіль:" << endl;
-    cout << "Довжина: " << car.length << " м" << endl;
-    cout << "Кліренс: " << car.clearance << " см" << endl;
-    cout << "Об'єм двигуна: " << car.engineVolume << " л" << endl;
-    cout << "Потужність двигуна: " << car.enginePower << " к.с." << endl;
-    cout << "Діаметр коліс: " << car.wheelDiameter << " дюймів" << endl;
-    cout << "Колір: " << car.color << endl;
-    cout << "Тип коробки передач: " << car.transmission << endl;
+    cout << "\nCar details:" << endl;
+    cout << "Length: " << car.length << " m" << endl;
+    cout << "Clearance: " << car.clearance << " cm" << endl;
+    cout << "Engine volume: " << car.engineVolume << " L" << endl;
+    cout << "Engine power: " << car.enginePower << " HP" << endl;
+    cout << "Wheel diameter: " << car.wheelDiameter << " inches" << endl;
+    cout << "Color: " << car.color << endl;
+    cout << "Transmission type: " << car.transmission << endl;
 }
